@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --primary-color: #49bf9d;
+  --text-color: #a2a2a2;
+  --heading-color: #787878;
+  --aside-big-color: #1f1215;
+  --border-color: rgb(239, 239, 239);
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  color: var(--heading-color);
+}
+
+.button-link {
+  border: 3px solid var(--border-color);
+  border-radius: 6px;
+  color: rgb(120, 120, 120);
+  padding: 14px 40px;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.button-link:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.capitalized {
+  text-transform: capitalize;
+}
+
+/* начало левого фиксед сайт блока */
+
+.fixed-side-block {
+  align-items: flex-end;
+  background-color: var(--aside-big-color);
+  background-image: url(https://html5up.net/uploads/demos/strata/assets/css/images/overlay.png),
+    url(https://html5up.net/uploads/demos/strata/images/bg.jpg);
+  background-size: auto, 150%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  left: 0;
+  justify-content: space-between;
+  padding: 128px 64px;
+  position: fixed;
+  top: 0;
+  width: 35%;
+}
+
+.fixed-side-block a {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+.fixed-side-block a:hover {
+  color: var(--primary-color);
+  border-bottom: transparent;
+}
+
+.header {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.header .image img {
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+}
+
+.main-heading-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.main-heading-container h1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 22px;
+  line-height: 39px;
+  text-align: right;
+  width: 64%;
+}
+
+.main-heading-container h1 span {
+  color: #fff;
+}
+
+.footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+}
+
+.footer .links-list {
+  display: flex;
+}
+
+.footer .links-list .list-item:not(:first-child) {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+/* конец левого фиксед сайт блока */
+
+/* начало правого блока */
+
+.main-container {
+  margin-left: 35%;
+  padding: 128px 292px 128px 64px;
+}
+
+.main-container > div:not(:last-child) {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.description-section {
+  padding-bottom: 64px;
+}
+
+.description-section .description-title {
+  color: var(--heading-color);
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 32px;
+  width: 80%;
+}
+
+.main-container .description-paragraph {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+
+.images-section {
+  padding: 64px 0;
+}
+
+.images-section .images-title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.images-section .image-block .image {
+  border-radius: 6px;
+}
+
+.images-section .images-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images-section .image-block {
+  margin-bottom: 32px;
+}
+
+.images-section .image-block:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.form-section {
+  padding: 64px 0;
+  font-size: 24px;
+}
+
+.forms {
+  display: flex;
+}
+
+.forms .info-block {
+  margin-left: 64px;
+}
+
+.name-email-block {
+  display: flex;
+}
+
+.name-email-block .email-block {
+  margin-left: 40px;
+}
+
+.message {
+  margin-top: 20px;
+}
+
+.info li {
+  color: var(--heading-color);
+  font-size: 16px;
+  margin-bottom: 24px;
+  line-height: 24px;
+}
+
+.images-link {
+  margin-top: 40px;
+}
+
+.form-text .description-title {
+  margin-bottom: 32px;
+}
+
+.message #message {
+  background-color: #f7f7f7;
+  padding: 15px;
+  font-family: "Source Sans Pro";
+  border: none;
+}
+
+textarea:focus {
+  outline-color: var(--primary-color);
+}
+
+input[type="text"] {
+  outline-color: var(--primary-color);
+  background-color: #f7f7f7;
+  padding: 15px;
+  font-family: "Source Sans Pro";
+  border: none;
+}
+
+input[type="email"] {
+  outline-color: var(--primary-color);
+  background-color: #f7f7f7;
+  padding: 15px;
+  font-family: "Source Sans Pro";
+  border: none;
+}
+/* конец правого блока */
